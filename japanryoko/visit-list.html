@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>방문 목록 - 오사카 여행 가이드</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+</head>
+<body data-page="visit-list">
+  <header class="site-header">
+    <h1>방문 목록</h1>
+    <nav>
+      <a class="nav-link" href="index.html">홈</a>
+      <a class="nav-link" href="help.html">도움말</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section>
+      <div style="display:flex; justify-content: space-between; align-items: center; margin-bottom:8px;">
+        <h2 class="section-title" style="margin:0;">내 방문 목록</h2>
+        <button id="clearVisitBtn" class="btn btn-danger">목록 비우기</button>
+      </div>
+      <div id="visitList" class="list"></div>
+      <div id="visitEmpty" class="empty" hidden>아직 추가한 장소가 없습니다.</div>
+    </section>
+
+    <section>
+      <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap; margin: 8px 0;">
+        <label for="travelMode">이동 모드</label>
+        <select id="travelMode">
+          <option value="walking">도보</option>
+          <option value="driving">자동차</option>
+          <option value="cycling">자전거</option>
+        </select>
+        <button id="selectAllBtn" class="btn">전체선택</button>
+        <button id="routeBtn" class="btn btn-primary">선택 경로 보기 (출발: KIX)</button>
+      </div>
+      <div id="visitMap" class="map"></div>
+    </section>
+
+    <section class="summary">
+      <div class="summary-item">
+        <span>예상 총 비용</span>
+        <strong id="totalCost">0 JPY</strong>
+      </div>
+      <div class="summary-item">
+        <span>예상 일정</span>
+        <strong><span id="tripNights">0</span>박 <span id="tripDays">0</span>일</strong>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>OSM 데이터 · Overpass API 사용</p>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script type="module" src="js/main.js" defer></script>
+</body>
+</html>
+
+

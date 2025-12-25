@@ -1,0 +1,44 @@
+[
+  {
+    "id": "osaka-castle",
+    "name": "오사카성",
+    "description": "오사카의 상징적 성곽과 공원, 역사와 전망을 함께 즐길 수 있는 명소",
+    "lat": 34.687315,
+    "lon": 135.52593,
+    "image": "images/osaka-castle.png"
+  },
+  {
+    "id": "dotonbori",
+    "name": "도톤보리",
+    "description": "글리코 사인과 화려한 네온사인, 미식과 쇼핑의 거리",
+    "lat": 34.668735,
+    "lon": 135.501161,
+    "image": "images/dotonbori.jpg"
+  },
+  {
+    "id": "umeda-sky-building",
+    "name": "우메다 스카이 빌딩",
+    "description": "공중정원 전망대로 유명한 오사카의 현대적 랜드마크",
+    "lat": 34.705492,
+    "lon": 135.490357,
+    "image": "images/umeda-sky-building.avif"
+  },
+  {
+    "id": "shitennoji",
+    "name": "시덴노지",
+    "description": "일본에서 가장 오래된 사찰 중 하나로 알려진 유서 깊은 절",
+    "lat": 34.653965,
+    "lon": 135.516388,
+    "image": "images/shitennoji.png"
+  },
+  {
+    "id": "kaiyukan",
+    "name": "가이유칸 수족관",
+    "description": "세계 최대급 규모의 수족관으로 다양한 해양 생물 경험",
+    "lat": 34.654517,
+    "lon": 135.428241,
+    "image": "images/kaiyukan.avif"
+  }
+]
+
+

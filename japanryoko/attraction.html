@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>명소 상세 - 오사카 여행 가이드</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+</head>
+<body data-page="attraction">
+  <header class="site-header">
+    <h1 id="attractionName">명소 상세</h1>
+    <nav>
+      <a class="nav-link" href="index.html">홈</a>
+      <a class="nav-link" href="visit-list.html">방문 목록</a>
+      <a class="nav-link" href="help.html">도움말</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="hero" class="hero">
+      <img id="attractionImage" class="hero-image" alt="명소 이미지" />
+      <div class="hero-body">
+        <p id="attractionDesc" class="hero-desc"></p>
+        <button id="addAttractionBtn" class="btn">이 명소 방문 목록에 추가</button>
+        <button id="loadNearbyBtn" class="btn btn-primary">주변 장소 불러오기</button>
+      </div>
+    </section>
+
+    <section>
+      <div id="map" class="map"></div>
+    </section>
+
+    <section>
+      <h2 class="section-title">주변 장소</h2>
+      <div id="nearbyGrid" class="grid"></div>
+      <div id="nearbyEmpty" class="empty" hidden>버튼을 눌러 주변 장소를 불러오세요.</div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>OSM 데이터 · Overpass API 사용</p>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script type="module" src="js/main.js" defer></script>
+</body>
+</html>
+
+

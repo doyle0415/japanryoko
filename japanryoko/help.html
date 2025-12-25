@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>도움말 - 오사카 여행 가이드</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>도움말</h1>
+    <nav>
+      <a class="nav-link" href="index.html">홈</a>
+      <a class="nav-link" href="visit-list.html">방문 목록</a>
+      <a class="nav-link" href="help.html">도움말</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- <section>
+      <h2 class="section-title">이 사이트는?</h2>
+      <p>오사카 5대 명소 주변의 식당/카페/신사/관광지를 OpenStreetMap의 Overpass API로 실시간 조회하고, 방문 목록을 만들어 비용·일정·이동 경로를 추정해주는 100% 정적 웹사이트입니다.</p>
+    </section> -->
+
+    <section>
+      <h2 class="section-title">시작하기</h2>
+      <ul>
+        <li>홈 화면: 5개 주요 명소 카드 중 하나를 선택</li>
+        <li>상세 화면(명소 페이지):
+          <ul>
+            <li>이미지/설명 확인</li>
+            <li>[이 명소 방문 목록에 추가]로 주요 명소도 담기</li>
+            <li>[주변 장소 불러오기] → 주변 장소 카드 표시</li>
+            <li>카드에서 카테고리, 거리, (있다면) 전화/주소/영업시간/웹사이트 확인</li>
+            <li>[구글맵 리뷰] 버튼으로 외부 리뷰 확인</li>
+            <li>[방문 목록에 추가]로 리스트에 담기</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="section-title">방문 목록</h2>
+      <ul>
+        <li>목록 보기/관리: 담은 장소를 카드로 확인, 각 항목은 [구글맵]과 [삭제] 제공</li>
+        <li>목록 비우기: [목록 비우기]로 전체 초기화</li>
+        <li>비용 추정:
+          <ul>
+            <li>레스토랑 2000 JPY / 카페 800 JPY / 관광지 600 JPY / 신사 0 JPY / 기타 0 JPY</li>
+          </ul>
+        </li>
+        <li>일정 추정: 4곳당 1일(최소 1일). N박 M일은 (M-1)박 M일</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="section-title">경로 보기</h2>
+      <ul>
+        <li>출발지: 칸사이 국제공항(KIX)</li>
+        <li>선택 방식: 각 항목의 체크박스 선택/해제 또는 [전체선택]</li>
+        <li>이동 모드: 도보 / 자동차 / 자전거</li>
+        <li>경로 표시: [선택 경로 보기 (출발: KIX)] → 선택 항목 순서대로 경로, 총 거리/시간 표시</li>
+        <li>참고: 경로 계산은 OSRM 공개 라우팅 서버를 사용하며, 혼잡 시 직선 경로로 대체될 수 있음</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="section-title">지도 사용 팁</h2>
+      <ul>
+        <li>확대/이동: 마우스 휠/핀치, 드래그</li>
+        <li>마커: 명소와 선택 장소는 마커로 표시, 클릭 시 이름 팝업</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="section-title">문제 해결</h2>
+      <ul>
+        <li>주변 장소가 안 나올 때:
+          <ul>
+            <li>잠시 후 다시 시도(서버 혼잡 가능)</li>
+            <li>네트워크 상태 확인, 브라우저 확장(광고 차단 등) 일시 해제</li>
+            <li>명소를 바꾸거나 페이지 새로고침</li>
+          </ul>
+        </li>
+        <li>경로가 안 그려질 때:
+          <ul>
+            <li>선택 항목이 2개 이상인지 확인</li>
+            <li>이동 모드를 바꿔 다시 시도</li>
+            <li>잠시 후 다시 시도(공용 라우팅 서버 혼잡 가능)</li>
+          </ul>
+        </li>
+        <li>목록 초기화: [목록 비우기]로 초기화 후 재시도</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="section-title">오픈소스 고지</h2>
+      <ul>
+        <li>OpenStreetMap: 데이터 제공</li>
+        <li>Leaflet: 지도 렌더링</li>
+        <li>OSRM: 경로 계산</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>OSM 데이터 · Overpass API 사용</p>
+  </footer>
+</body>
+</html>
+
+
